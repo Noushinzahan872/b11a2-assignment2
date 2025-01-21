@@ -175,7 +175,29 @@
                           /* footer part */
      .foot{
         background-color: skyblue;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
      }     
      .kid{
         display: flex;
-     }                
+     }
+     .foot-item{
+        list-style: none;
+    
+      }
+      .foot-link{
+        text-decoration: none;
+        font-weight: 500;
+        display: flex;
+        color:white;
+      }           
+      .foot-title{
+        color: white;
+        font-style: bold;
+      }
+      .top{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+      }
