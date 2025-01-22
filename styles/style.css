@@ -171,7 +171,7 @@
 
     .color-3{
         /* background-image:url("../assets/bg.png") ; */
-        background-image: linear-gradient(white,rgb(236, 193, 112)),url('../assets/bg.png');
+        background-image: linear-gradient(rgba(236,193,112,.25), rgba(236, 193, 112,.25)) , url('../assets/bg.png');
 
     }
     .our-title{
