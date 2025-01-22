@@ -55,8 +55,26 @@
     font-size: 1rem;
     border-radius: 10px;
     border: none;
-
   }
+              .marquee{
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                box-sizing: border-box;
+              }
+              .marquee span{
+                display: inline-block;
+                /* padding-left: 100%; */
+                animation:marquee 5s linear infinite;
+              }
+              @keyframes marquee{
+                0%{
+                  transform:translateX(100%);
+                }
+                100%{
+                  transform: translateX(-100);
+                }
+              }
   .banner{
     display: flex;
     max-width: 90%;
@@ -305,6 +323,7 @@
        .menubar{
         margin-right: 100px;
         margin-top: 20px;
+        display: block;
        }
        .banner-content{
         text-align: center;
@@ -319,7 +338,13 @@
        .foot{
         /* flex-direction: column; */
         grid-template-columns: 1fr;
+        max-width: 100%;
        }
+       .top{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+      }
        .nav-links{
            display: none;
         }
@@ -329,13 +354,14 @@
         .hero-img{
           max-width: 100%;
           width: 100%;
-          margin: 0 auto;
+          /* margin: 0 auto; */
         }
         .images-card-left{
           display: none;
         }
        .images-card-right{
         grid-template-columns: repeat(2,1fr);
+        max-width: 100%;
         /* width:90%; */
 
        }
@@ -349,7 +375,8 @@
   font-size: 1rem;
   border-radius: 10px;
   border: none;
-  margin-left: 50px;
+  margin-left: 150px;
+
   /* margin-top: 50px;
   margin-bottom: 50px; */
  }
@@ -361,6 +388,7 @@
   text-align: center;
   align-items: center;
   background: linear-gradient(#00ffff,white);
+  gap: 10px;
 }
 .fact-card-2{
   /* border: 1px solid aqua; */
@@ -370,6 +398,7 @@
   text-align: center;
   align-items: center;
   background: linear-gradient(#ff02ff,white);
+  gap: 20px;
 }
 .fact-card-3{
   /* border: 1px solid aqua; */
@@ -384,8 +413,15 @@
   width: 100%;
   height: auto;
 }
+/* .img-item{
+  width: 270px;
+  height: 320px;
+  gap:10px;
+} */
+
 .img-item{
-  width: 100%;
+  max-width: 100%;
 }
+
 
       }
